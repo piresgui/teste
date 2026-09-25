@@ -8,11 +8,12 @@ public class MainClass {
 		MainCanvas meuCanvas = new MainCanvas();
 		
 		JFrame f = new JFrame();
-		f.setSize(640, 480);
-		f.setVisible(true);
+		f.setTitle("Cena 3D - OBJ");
+		f.setSize(960, 720);
 		f.getContentPane().add(meuCanvas);
-		
-	
+		f.setVisible(true);
+		meuCanvas.requestFocusInWindow();
+
 		f.addWindowListener(new WindowAdapter() {
 		    @Override
 		    public void windowClosing(WindowEvent e) {
