@@ -13,6 +13,10 @@ public class Triangulo3D {
 		this.pc = new Ponto3D(c);
 	}
 	
+	public Ponto3D getA() { return pa; }
+	public Ponto3D getB() { return pb; }
+	public Ponto3D getC() { return pc; }
+	
 	public void desenhase(Graphics2D dbg) {
 		
 		dbg.drawLine((int)pa.x,(int)pa.y,(int)pb.x,(int)pb.y);
